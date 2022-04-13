@@ -1,0 +1,16 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+[hidden] {
+  display: none;
+}
+
+a.image-link {
+  text-decoration: none;
+}
