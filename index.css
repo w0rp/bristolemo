@@ -11,6 +11,35 @@ html {
   display: none;
 }
 
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+hr {
+  margin: 2em 0;
+}
+
 a.image-link {
   text-decoration: none;
+}
+
+p.release-date {
+  font-style: italic;
+  font-size: 75%;
+}
+
+.logos {
+  margin-top: 4em;
+}
+
+.license {
+  margin-top: 2em;
 }
