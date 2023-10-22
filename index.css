@@ -43,3 +43,17 @@ p.release-date {
 .license {
   margin-top: 2em;
 }
+
+.bandcamp-small-screen-image {
+  position: absolute;
+  right: 8px;
+  width: 48px;
+  height: 48px;
+}
+
+/* Bandcamp embed images appear at 416px+ */
+@media only screen and (min-width: 416px) {
+  .bandcamp-small-screen-image {
+    display: none;
+  }
+}
