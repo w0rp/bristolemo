@@ -11,6 +11,10 @@ html {
   display: none;
 }
 
+p, hr, ul, ol {
+  max-width: 60em;
+}
+
 h1 {
   font-size: 3em;
 }
