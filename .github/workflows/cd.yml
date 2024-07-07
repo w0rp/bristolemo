@@ -1,0 +1,24 @@
+---
+name: Deploy Website
+
+on:  # yamllint disable-line rule:truthy
+  push:
+    paths-ignore:
+      - README.md
+      - LICENSE
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # Run deploy.sh on the server to deploy the site
+      - name: Build Public Website
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USERNAME }}
+          key: ${{ secrets.DEPLOY_SSH_PRIVATE_KEY }}
+          script_stop: true
+          script: cd ~/bristolemo && ./deploy.sh
