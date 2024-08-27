@@ -1,30 +1,66 @@
-html {
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
   font-family: sans-serif;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+body {
+  margin: 8px;
 }
 
 [hidden] {
   display: none;
 }
 
-p, hr, ul, ol {
-  max-width: 60em;
-}
-
 h1 {
   font-size: 3em;
+  margin: 18px 0;
 }
 
 h2 {
   font-size: 2em;
+  margin: 16px 0;
 }
 
 h3 {
   font-size: 1.5em;
+  margin: 14px 0;
+}
+
+h4 {
+  font-size: 1.25em;
+  margin: 12px 0;
+}
+
+h5 {
+  font-size: 1.125em;
+  margin: 10px 0;
+}
+
+h5 {
+  font-size: 1em;
+  margin: 8px 0;
+}
+
+p, hr, ul, ol {
+  max-width: 60em;
+}
+
+p {
+  margin-top: 12px;
+}
+
+ul, ol {
+  padding-left: 40px;
+  margin-top: 12px;
 }
 
 hr {
@@ -36,6 +72,7 @@ a.image-link {
 }
 
 p.release-date {
+  margin-top: 0;
   font-style: italic;
   font-size: 75%;
 }
