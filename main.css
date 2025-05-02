@@ -56,6 +56,10 @@ p {
   margin-top: 12px;
 }
 
+p.m-bottom {
+  margin-bottom: 12px;
+}
+
 p.callout {
   font-size: 2em;
 }
