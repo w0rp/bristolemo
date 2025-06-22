@@ -85,10 +85,18 @@ a.callout-link:hover {
   color: #0000EE;
 }
 
+p.small {
+  font-size: 75%;
+}
+
 p.release-date {
   margin-top: 0;
   font-style: italic;
   font-size: 75%;
+}
+
+iframe {
+  margin-top: 0.5em;
 }
 
 .logos {
@@ -101,6 +109,8 @@ p.release-date {
 
 .bandcamp-small-screen-image {
   position: absolute;
+  /* margin here must match the margin for the iframe to fit */
+  margin-top: 0.5em;
   right: 8px;
   width: 48px;
   height: 48px;
